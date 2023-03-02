@@ -1,0 +1,17 @@
+Mã giả
+Begin
+	Input a,b,c
+	while !( a,b,c is a number) 
+            do 
+               input a,b,c
+             enddo
+
+	max=a
+	if(max > b and max > c) then 
+             display " max=a"
+	else if(b >c) then 
+             display " max=b"
+	else  then 
+            dispay "max=c"
+         endif
+end.
