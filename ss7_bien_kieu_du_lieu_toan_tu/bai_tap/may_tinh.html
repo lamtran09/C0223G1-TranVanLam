@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy Tính</title>
+</head>
+<body>
+<h1>Calulator</h1>
+<input id="number1" type="text">
+<input id="number2" type="text"><br>
+<br>
+<button type="button" onclick="addition()"><b>Addition(+)</b></button>
+<button type="button" onclick="subtract()"><b>Subtraction(-)</b></button>
+<button type="button" onclick="multi()"><b>Multiplication(X)</b></button>
+<button type="button" onclick="div()"><b>Division(/)</b></button>
+<p id="click"></p>
+<script>
+    function addition() {
+        let point1 = parseInt(document.getElementById("number1").value);
+        let point2 = parseInt(document.getElementById("number2").value);
+        let add = point1 + point2;
+        document.getElementById("click").innerText = " Result Addition: " + add;
+    }
+
+    function subtract() {
+        let point1 = parseInt(document.getElementById("number1").value);
+        let point2 = parseInt(document.getElementById("number2").value);
+        let sub = point1 - point2;
+        document.getElementById("click").innerText = " Result Subtraction:" + sub;
+    }
+
+    function multi() {
+        let point1 = parseInt(document.getElementById("number1").value);
+        let point2 = parseInt(document.getElementById("number2").value);
+        let mul = point1 * point2;
+        document.getElementById("click").innerText = "Result Multiplication:" + mul;
+    }
+
+    function div() {
+        let point1 = parseInt(document.getElementById("number1").value);
+        let point2 = parseInt(document.getElementById("number2").value);
+        let div = point1 / point2;
+        document.getElementById("click").innerText = "Result Division:" + div;
+    }
+</script>
+</body>
+</html>

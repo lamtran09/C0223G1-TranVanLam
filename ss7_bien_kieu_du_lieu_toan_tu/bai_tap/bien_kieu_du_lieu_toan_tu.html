@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biến Kiểu Dữ Liệu và Toán Tử</title>
+</head>
+<body>
+<button type="button" onclick="diemtrungbinhcong();" id="tb">Điểm trung bình cộng</button>
+<button type="button" onclick="tong();" id="t">Tổng</button>
+<button type="button" onclick="doido();" id="cf">Đổi nhiệt độ</button>
+<button type="button" onclick="dientichinhtron();" id="dt">Diện tích hình tròn</button>
+<button type="button" onclick="chuvihinhtron();" id="cv">Chu vi hình tròn</button>
+<script>
+    function diemtrungbinhcong() {
+        let diemly = prompt('Mời bạn nhập điểm Vật Lý') * 1;
+        let diemhoa = prompt('Mời bạn nhập điểm Hóa') * 1;
+        let diemsinh = prompt('Mời bạn nhập điểm Sinh') * 1;
+        alert('Điểm trung bình cộng:' + (diemly + diemhoa + diemsinh) / 3)
+    }
+
+    function tong() {
+        let diemly = prompt('Mời bạn nhập điểm Vật Lý') * 1;
+        let diemhoa = prompt('Mời bạn nhập điểm Hóa') * 1;
+        let diemsinh = prompt('Mời bạn nhập điểm Sinh') * 1;
+        alert('Tổng:' + (diemly + diemhoa + diemsinh))
+    }
+</script>
+<script>
+    function doido() {
+        let Fahrenheit = prompt('Mời bạn nhập độ F') * 1;
+        alert('Nhiệt độ C:' + 5 * (Fahrenheit - 32) / 9)
+    }
+</script>
+<script>
+    function dientichinhtron() {
+        let bankinh = prompt('Mời bạn nhập bán kính') * 1;
+        alert('Diện tích hình tròn:' + (bankinh * bankinh) * 3.14)
+    }
+</script>
+<script>
+    function chuvihinhtron() {
+        let bankinh = prompt('Mời bạn nhập bán kính') * 1;
+        alert('Chu vi hình tròn:' + (bankinh * 2) * 3.14)
+    }
+</script>
+</body>
+</html>
