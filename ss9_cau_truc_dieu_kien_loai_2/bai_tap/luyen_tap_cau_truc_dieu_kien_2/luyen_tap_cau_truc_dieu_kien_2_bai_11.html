@@ -5,6 +5,27 @@
     <title>Tính thuế thu nhập cá nhân</title>
 </head>
 <body>
-<h1>Tính thuế thu nhập cá nhân</h1>
 </body>
+<script>
+    let tienThue = prompt('Nhập tiền lương của bạn:')*1  ;
+    if (tienThue >= 0) {
+        if (tienThue <= 5000000) {
+            alert('Số tiền thuế của bạn là: ' + tienThue*5/100 + ' VNĐ');
+        } else if (tienThue <= 10000000) {
+            alert('Số tiền thuế của bạn là: ' + ((tienThue*10/100) - 250000) + ' VNĐ');
+        } else if (tienThue <= 18000000) {
+            alert('Số tiền thuế của bạn là: ' + ((tienThue*15/100) - 750000) + ' VNĐ');
+        } else if (tienThue <= 32000000) {
+            alert('Số tiền thuế của bạn là: ' + ((tienThue*20/10) - 1650000) + ' VNĐ');
+        } else if (tienThue <= 52000000) {
+            alert('Số tiền thuế của bạn là: ' + ((tienThue*25/100) - 3250000) + ' VNĐ');
+        } else if (tienThue <= 80000000) {
+            alert('Số tiền thuế của bạn là: ' + ((tienThue*30/100) - 5850000) + ' VNĐ');
+        } else {
+            alert('Số tiền thuế của bạn là: ' + ((tienThue*50/100) - 9850000) + ' VNĐ')
+        }
+    } else {
+        alert(' BẠN NHẬP SAI RỒI, MỜI BẠN NHẬP LAI!');
+    }
+</script>
 </html>
