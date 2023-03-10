@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+<h1>Giải phương trình bậc 2</h1>
+Nhập a: <input type="text" id="a">
+Nhập b:<input type="text" id="b">
+Nhập c:<input type="text" id="c">
+<button onclick="giaiPhuongTrinhBac2()">Kết quả</button>
+<p id="print"></p>
+
+<script>
+    function giaiPhuongTrinhBac2() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        let delta = b * b - (4 * a * c)
+        if (delta > 0) {
+            document.getElementById("print").innerText = "Phương trình có 2nghiêm phân biệt là " + (-b + Math.sqrt(delta)) / 2 * a + "và" + (b + Math.sqrt(delta)) / 2 * a
+        } else if (delta < 0) {
+            document.getElementById("print").innerText = "Phương trình VN"
+        } else {
+            document.getElementById("print").innerText = "Phương trình có nghiêm kép là "
+        }
+    }
+</script>
+</body>
+</html>

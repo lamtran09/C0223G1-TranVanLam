@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cạnh của một tam giác</title>
+</head>
+<body>
+<h1>Cạnh của một tam giác</h1>
+Nhập a: <input type="text" id="a">
+Nhập b:<input type="text" id="b">
+Nhập c:<input type="text" id="c">
+<button onclick="canhCuaMotTamGiac()">Kết quả</button>
+<p id="print"></p>
+<script>
+    function canhCuaMotTamGiac() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        if (a && b && c > 0 ) {
+            document.getElementById("print").innerText = "3 số thực (a,b,c) là cạnh của một tam giác"
+        } else if (a + b > c) {
+            document.getElementById("print").innerText = "3 số thực (a,b,c) là cạnh của một tam giác"
+        } else if (b + c > a) {
+            document.getElementById("print").innerText = "3 số thực (a,b,c) là cạnh của một tam giác"
+        } else if (a + c > b) {
+            document.getElementById("print").innerText = "3 số thực (a,b,c) là cạnh của một tam giác"
+        } else {
+            document.getElementById("print").innerText = "3 số thực (a,b,c) là không phải cạnh của một tam giác"
+        }
+    }
+</script>
+</body>
+</html>

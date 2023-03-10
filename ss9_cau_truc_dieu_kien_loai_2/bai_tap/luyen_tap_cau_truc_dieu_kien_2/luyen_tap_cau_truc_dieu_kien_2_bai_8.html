@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuổi của một người</title>
+</head>
+<body>
+<h1>Tuổi của một người</h1>
+<input type="text" id="old">
+<button onclick="tuoiCuaMotNguoi()">Kiểm tra</button>
+<p id="print"></p>
+<script>
+    function tuoiCuaMotNguoi() {
+        let old = document.getElementById("old").value;
+        if (old > 0) {
+            document.getElementById("print").innerText = "Đây là tuổi của một người"
+        } else if (old < 120) {
+            document.getElementById("print").innerText = "Đây là tuổi của một người"
+        } else {
+            document.getElementById("print").innerText = "Đây không phải là tuổi của một người"
+        }
+    }
+</script>
+</body>
+</html>

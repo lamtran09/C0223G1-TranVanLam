@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích tam giác vuông</title>
+</head>
+<body>
+<h1>Tính diện tích tam giác vuông</h1>
+Nhâp cạnh a(cạnh đáy):<input type="text" id="canhA">
+Nhâp cạnh b(chiều cao):<input type="text" id="canhB">
+<button onclick="tinhDienTichTamGiacVuong()">Kết quả</button>
+<p id="print"></p>
+</body>
+<script>
+    function tinhDienTichTamGiacVuong() {
+        let canhA = document.getElementById("canhA").value;
+        let canhB = document.getElementById("canhB").value;
+        let add = (canhA * canhB)/2
+        document.getElementById("print").innerText = "Diện tích tam giác vuông là:" + add + "cm2"
+    }
+</script>
+</html>

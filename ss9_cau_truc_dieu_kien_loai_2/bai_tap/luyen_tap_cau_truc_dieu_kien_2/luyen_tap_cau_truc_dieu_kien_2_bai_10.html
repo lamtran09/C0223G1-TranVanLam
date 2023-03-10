@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giá điện</title>
+</head>
+<body>
+<h1>Tính giá điện</h1>
+Nhập P(Công suất): <input type="text" id="p">
+Nhập t(Thơi gian sử dụng):<input type="text" id="t">
+<button onclick="tienDien()">Kết quả</button>
+<p id="print"></p>
+<script>
+    function tienDien() {
+        let p = document.getElementById("p").value;
+        let t = document.getElementById("t").value;
+        let a = p * t
+        document.getElementById("print").innerText = "Tiền điện tháng này của bạn là " + a + "VND"
+    }
+</script>
+</body>
+</html>

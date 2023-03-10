@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 1</title>
+</head>
+<body>
+<h1>Giải phương trình bậc 1</h1>
+Nhập a: <input type="text" id="a">
+Nhập b:<input type="text" id="b">
+<button onclick="giaiPhuongTrinhBac1()">Kết quả</button>
+<p id="print"></p>
+</body>
+<script>
+    function giaiPhuongTrinhBac1(){
+        let a= document.getElementById("a").value;
+        let b= document.getElementById("b").value;
+        if (a==0){
+            document.getElementById("print").innerText="phương trình có nghiệm là "+b
+        }else if(b==0) {
+            document.getElementById("print").innerText = "phương trình có 2 nghiệm là " + a
+        }else {
+            document.getElementById("print").innerText="phương trình VN"
+        }
+        }
+
+</script>
+</html>

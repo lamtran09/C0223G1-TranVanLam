@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình  chữ nhật</title>
+</head>
+<body>
+<h1>Tính diện tích hình  chữ nhật</h1>
+Nhâp cạnh dài:<input type="text" id="canhDai">;
+Nhập cạnh ngắn:<input type="text" id="canhNgan">;
+<button onclick="tinhDienTichHinhChuNhat()">Kết quả</button>
+<p id="print"></p>
+</body>
+<script>
+    function tinhDienTichHinhChuNhat(){
+        let canhDai = document.getElementById("canhDai").value;
+        let canhNgan = document.getElementById("canhNgan").value;
+        let add = canhDai*canhNgan;
+        document.getElementById("print").innerText="Diện tích hình chữ nhật là :" + add + "cm2"
+    }
+</script>
+</html>

@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tính diện tích hình vuông</title>
 </head>
 <body>
+<h1>Tính diện tích hình vuông</h1>
+Nhập cạnh a:<input type="text" id="canh">
+<button onclick="tinhDienTichHinhVuong()">Kết quả</button>
+<p id="print"></p>
+<script>
+    function  tinhDienTichHinhVuong(){
+        let canh = document.getElementById("canh").value;
+        let add = canh*canh;
+        document.getElementById("print").innerText="Diện tích hình vuông là:" + add +"cm2"
+    }
+
+
+</script>
 
 </body>
 </html>
