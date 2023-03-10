@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị lớn nhất</title>
+</head>
+<body>
+<h1>Tìm giá trị lớn nhất</h1>
+Số nguyên a: <input id="soNguyenA"><br>
+Số nguyên b: <input id="soNguyenB"><br>
+Số nguyên c: <input id="soNguyenC"><br>
+<button onclick="kiemTra()" >Kiểm Tra nào</button>
+<p id="print"></p>
+<script>
+    function kiemTra(){
+        let a = document.getElementById("soNguyenA").value;
+        let b = document.getElementById("soNguyenB").value;
+        let c = document.getElementById("soNguyenC").value;
+        if (a>b && a>c){
+            document.getElementById("print").innerText= "Giá trị lớn nhất là a"
+        }else if(b>a && b>c){
+            document.getElementById("print").innerText= "Giá trị lớn nhất là b"
+        }else{
+            document.getElementById("print").innerText= "Giá trị lớn nhất là c"
+        }
+    }
+</script>
+</body>
+</html>

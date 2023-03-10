@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực của học sinh</title>
+</head>
+<body>
+<h1> Xếp hạng học lực của học sinh</h1>
+Bài kiểm tra: <input id="baiKiemTra">
+Điểm thi giữa kỳ: <input id="diemThiGiuaKy">
+Điểm thi cuối kỳ: <input id="diemThiCuoiKy">
+<button onclick="kiemTra()">Kiểm Tra</button>
+<p id="print"> </p>
+<script>
+    function kiemTra(){
+        let baiKiemTra = +document.getElementById("baiKiemTra").value;
+        let diemThiGiuaKy = +document.getElementById("diemThiGiuaKy").value;
+        let diemThiCuoiKy = +document.getElementById("diemThiCuoiKy").value;
+        let tBC = (baiKiemTra+diemThiGiuaKy+diemThiCuoiKy)/3
+        if(tBC>=8){
+            document.getElementById("print").innerText= "Học lực giỏi"
+        }else if(tBC>=6.5){
+            document.getElementById("print").innerText= "Học lực khá"
+        }else if(tBC>=5){
+            document.getElementById("print").innerText= "Học lực Trung Bình"
+        }else{
+            document.getElementById("print").innerText= "Học lực Yếu"
+        }
+    }
+
+</script>
+</body>
+</html>

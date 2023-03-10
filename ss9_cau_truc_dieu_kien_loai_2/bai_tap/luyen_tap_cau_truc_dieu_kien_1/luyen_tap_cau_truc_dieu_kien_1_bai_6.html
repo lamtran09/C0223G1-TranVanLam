@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng</title>
+</head>
+<body>
+<h1>Tính hoa hồng</h1>
+Giá bán:<input type="text" id="giaBan" >
+Phần trăm hoa hồng quy định:<input type="text" id="phanTramHoaHong" ><br>
+<button onclick="xemKetQua()">Kết Quả</button>
+<p id="print"></p>
+</body>
+<script>
+    function xemKetQua(){
+        let giaBan= document.getElementById("giaBan").value;
+        let phanTramHoaHong= document.getElementById("phanTramHoaHong").value;
+        let hoaHong = giaBan * (phanTramHoaHong/100)
+        document.getElementById("print").innerText= "Hoa hồng bạn nhận đươc là: " + hoaHong + "VND"
+    }
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên</title>
+</head>
+<body>
+<h1>So sánh số nguyên bất kỳ với 0</h1>
+Nhập số bạn muốn kiểm tra: <input id="soNguyen">
+<button onclick="kiemTraKetQua()">Kiểm Tra</button>
+<p id="print"></p>
+</body>
+<script>
+    function kiemTraKetQua(){
+        let soNguyen = +document.getElementById("soNguyen").value;
+        if(soNguyen>0){
+            document.getElementById("print").innerText=" Số nguyên này lớn hơn 0"
+        }else if (soNguyen<0){
+            document.getElementById("print").innerText=" Số nguyên này bé hơn 0"
+        }else{
+            document.getElementById("print").innerText=" Số nguyên này bằng 0"
+        }
+    }
+</script>
+</html>

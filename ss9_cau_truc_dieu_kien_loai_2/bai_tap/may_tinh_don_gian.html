@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+    <input type="text" id="nhap">
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="so(1)" >1</button></td>
+        <td><button onclick="so(2)" >2</button></td>
+        <td><button onclick="so(3)" >3</button></td>
+        <td><button onclick="so('+')" >+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="so(4)" >4</button></td>
+        <td><button onclick="so(5)" >5</button></td>
+        <td><button onclick="so(6)" >6</button></td>
+        <td><button onclick="so('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="so(7)" >7</button></td>
+        <td><button onclick="so(8)" >8</button></td>
+        <td><button onclick="so(9)" >9</button></td>
+        <td><button onclick="so('*')">*</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="so('C')">C</button></td>
+        <td><button onclick="so(0)" >0</button></td>
+        <td><button onclick="so("=")" >=</button></td>
+        <td><button onclick="so('/')">/</button></td>
+    </tr>
+</table>
+<script>
+    function so(number){
+        document.getElementById("nhap").value+=so
+    }
+</script>
+</body>
+</html>
