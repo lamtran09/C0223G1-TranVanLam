@@ -5,6 +5,32 @@
     <title>Tính chỉ số cân nặng của cơ thể</title>
 </head>
 <body>
-
+<h1>Tính chỉ số cân nặng của cơ thể</h1>
+Cân nặng của bạn(kg):<input id="canNang"><br>
+<br>
+Chiều cao của bạn(m):<input id="chieuCao"><br>
+<br>
+<button type="ketQua" onclick="ketQua()" style="color: blue">Kết quả</button>
+<p id="print"></p>
+<script>
+    function ketQua() {
+        let weight = document.getElementById("canNang").value;
+        let height = document.getElementById("chieuCao").value;
+        let add = weight / (height * height)
+        if (add < 18) {
+            document.getElementById("print").style.color = "blue"
+            document.getElementById("print").innerText = "Chỉ số BIM của bạn là: " + add + " Bạn quá gầy"
+        } else if (add < 25) {
+            document.getElementById("print").style.color="red"
+            document.getElementById("print").innerText = "Chỉ số BIM của bạn là: " + add + " Bạn bình thường"
+        } else if (add < 30) {
+            document.getElementById("print").style.color="red"
+            document.getElementById("print").innerText = "Chỉ số BIM của bạn là: " + add + " Bạn quá béo"
+        } else {
+            document.getElementById("print").style.color="red"
+            document.getElementById("print").innerText = "Chỉ số BIM của bạn là: " + add + " Bạn bị béo phì"
+        }
+    }
+</script>
 </body>
 </html>
