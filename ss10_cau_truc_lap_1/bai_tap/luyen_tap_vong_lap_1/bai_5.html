@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dãy fibonacci</title>
+</head>
+<body>
+<script>
+    let sothunhat=0;
+    let sothuhai=1;
+    let sotiep;
+    let tong=0
+    for(let i=1;i<=20; i++) {
+        sotiep = sothunhat + sothuhai;
+        sothunhat = sothuhai;
+        sothuhai = sotiep;
+        tong++;
+    }if(tong==20){
+    document.write("Tổng 20 số liên tiếp trong dãy fibonacci:"+ sotiep);
+    }
+</script>
+</body>
+</html>
